@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import SectionHeading from "./section-heading";
 
 export default function About() {
   return (
@@ -12,9 +13,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <h2 className="text-3xl font-medium capitalize mb-8 text-center">
-        About me
-      </h2>
+      <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in{" "}
         <span className="font-medium">Accounting</span>, I decided to pursue my

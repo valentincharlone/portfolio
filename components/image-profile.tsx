@@ -35,7 +35,7 @@ export default function ImageProfile() {
           }}
           className="absolute bottom-0 -right-3 text-4xl"
         >
-          👋
+          🤙
         </motion.span>
       </div>
     </div>

@@ -83,23 +83,23 @@ function ExperienceItem({
       }}
       className="group"
     >
-      <section className="bg-gray-100 border border-black/5 rounded-lg p-6 hover:bg-gray-200 transition-colors">
+      <section className="bg-gray-100 border border-black/5 rounded-lg p-6 hover:bg-gray-200 transition-colors dark:bg-white/10 dark:hover:bg-white/20">
         {/* Header */}
         <div className="flex items-start justify-between mb-4">
           <div className="flex items-center gap-4">
             <div className="text-2xl">{icon}</div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
-              <p className="text-gray-700 font-medium">{company}</p>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{title}</h3>
+              <p className="text-gray-700 font-medium dark:text-white/80">{company}</p>
             </div>
           </div>
-          <span className="text-sm text-gray-600 bg-white px-3 py-1 rounded-full border border-black/[0.1]">
+          <span className="text-sm text-gray-600 bg-white px-3 py-1 rounded-full border border-black/[0.1] dark:bg-black/[0.1] dark:text-white/80">
             {date}
           </span>
         </div>
 
         {/* Description */}
-        <p className="text-gray-700 leading-relaxed mb-4">{description}</p>
+        <p className="text-gray-700 leading-relaxed mb-4 dark:text-white">{description}</p>
 
         {/* Technologies */}
         <ul className="flex flex-wrap gap-2">
@@ -111,7 +111,7 @@ function ExperienceItem({
               whileInView="animate"
               custom={techIndex}
               viewport={{ once: true }}
-              className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
+              className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/80 dark:bg-black/20 "
             >
               {tech}
             </motion.li>

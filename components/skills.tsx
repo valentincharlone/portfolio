@@ -39,7 +39,7 @@ export default function Skills() {
             initial="initial"
             whileInView="animate"
             custom={index}
-            className="bg-white border border-black/[0.1] py-3 px-5 rounded-xl"
+            className="bg-white border border-black/[0.1] py-3 px-5 rounded-xl dark:bg-white/10 dark:text-white/80"
           >
             {skill}
           </motion.li>

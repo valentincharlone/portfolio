@@ -21,7 +21,7 @@ export default function ImageProfile() {
             height={192}
             quality={95}
             priority
-            className="h-32 w-32 rounded-full object-cover border-[0.20rem] border-white shadow-xl"
+            className="h-32 w-32 rounded-full object-cover border-[0.20rem] border-white shadow-xl dark:border-gray-900"
           />
         </motion.div>
         <motion.span

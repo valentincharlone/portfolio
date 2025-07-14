@@ -1,6 +1,4 @@
 "use client";
-
-import React from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
@@ -19,21 +17,20 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        I'm a <span className="font-medium">Frontend Engineer</span> passionate
+        about creating modern web applications with exceptional user
+        experiences. I recently worked at{" "}
+        <span className="font-medium">TUXDI</span> developing the Artic CMS
+        platform and building engaging interfaces with advanced animations.
+      </p>
+
+      <p>
+        I specialize in{" "}
+        <span className="font-medium">React, Next.js, and TypeScript</span>, and
+        I'm currently expanding my skills with{" "}
+        <span className="font-medium">React Native and Express.js</span>. I love
+        solving complex problems and bringing creative ideas to life through
+        code.
       </p>
     </motion.section>
   );

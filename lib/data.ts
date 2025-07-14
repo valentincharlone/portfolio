@@ -31,31 +31,31 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Frontend Developer",
-    company: "Tech Company",
+    title: "Front End Engineer",
+    company: "TUXDI",
     description:
-      "Developed responsive web applications using React, Next.js, and TypeScript. Collaborated with design teams to implement pixel-perfect UI components.",
+      "Implementé exitosamente features clave como 'Entidades' y 'Benefits' en el producto Artic CMS. Desarrollé la nueva landing empresarial con diseño disruptivo, animaciones avanzadas y objetos 3D usando Next.js 14 y TypeScript. Lideré procesos de onboarding y migraciones de nuevos medios.",
     icon: "💼",
-    date: "2022 - Present",
-    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    date: "Abril 2023 - Presente",
+    technologies: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Framer Motion",
+      "GSAP",
+      "Strapi",
+      "SASS",
+    ],
   },
   {
-    title: "Junior Web Developer",
-    company: "Digital Agency",
+    title: "Front End Engineer",
+    company: "Freelance",
     description:
-      "Built interactive websites and landing pages. Worked with clients to understand requirements and deliver high-quality solutions.",
+      "Desarrollo de sitios web responsive para clientes como Electromédica de las Sierras y Alonso Ganados. Relevamiento de requerimientos, diseño de soluciones técnicas a medida y gestión integral de hosting. Coordinación con clientes mediante demos iterativas.",
     icon: "🚀",
-    date: "2021 - 2022",
-    technologies: ["JavaScript", "HTML", "CSS", "WordPress"],
-  },
-  {
-    title: "Freelance Developer",
-    company: "Self-employed",
-    description:
-      "Created custom websites for small businesses. Managed projects from conception to deployment, ensuring client satisfaction.",
-    icon: "💻",
-    date: "2020 - 2021",
-    technologies: ["JavaScript", "React", "Node.js", "MongoDB"],
+    date: "Julio 2022 - Presente",
+    technologies: ["React", "Vite", "CSS", "JavaScript", "Hostinger", "GitHub"],
   },
 ] as const;
 
@@ -89,6 +89,7 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
+  "React Native",
   "Redux",
   "Prisma",
   "CSS",

@@ -5,8 +5,9 @@ import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
 import { Toaster } from "react-hot-toast";
-import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
+import { LanguageProvider } from "@/context/language-context";
+import FloatingControls from "@/components/floating-controls";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,16 +37,19 @@ export default function RootLayout({
           h-[31.25rem] w-[50rem] rounded-full blur-[10rem] 
           sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#133626]"
         />
-        <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Footer />
+        <LanguageProvider>
+          <ThemeContextProvider>
+            <ActiveSectionContextProvider>
+              <FloatingControls />
 
-            <Toaster position="top-right" />
-            <ThemeSwitch />
-          </ActiveSectionContextProvider>
-        </ThemeContextProvider>
+              <Header />
+              {children}
+              <Footer />
+
+              <Toaster position="top-right" />
+            </ActiveSectionContextProvider>
+          </ThemeContextProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

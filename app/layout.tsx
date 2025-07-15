@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/header";
+import Header from "@/components/layout/header";
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
-import Footer from "@/components/footer";
+import Footer from "@/components/layout/footer";
 import { Toaster } from "react-hot-toast";
 import ThemeContextProvider from "@/context/theme-context";
 import { LanguageProvider } from "@/context/language-context";

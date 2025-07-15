@@ -2,9 +2,11 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
+import { useLanguage } from "@/context/language-context";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { t } = useLanguage();
+  const { ref } = useSectionInView(t("nav.about"));
 
   return (
     <motion.section

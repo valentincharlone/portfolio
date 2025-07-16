@@ -22,7 +22,7 @@ const fadeInAnimationVariants = {
 };
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("nav.experience");
 
   return (
     <section

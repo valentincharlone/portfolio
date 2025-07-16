@@ -9,7 +9,7 @@ import { sendEmail } from "@/actions/send-email";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  const { ref } = useSectionInView("nav.contact");
 
   return (
     <motion.section

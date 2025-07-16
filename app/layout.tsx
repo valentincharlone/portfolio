@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/layout/header";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/layout/footer";
 import { Toaster } from "react-hot-toast";
@@ -9,7 +9,10 @@ import ThemeContextProvider from "@/context/theme-context";
 import { LanguageProvider } from "@/context/language-context";
 import FloatingControls from "@/components/floating-controls";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Valentin Charlone | Portfolio",
@@ -24,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={` ${inter.className}  bg-gray-50 text-gray-950 relative pt-28 sm:pt-32 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+        className={` ${poppins.className}  bg-gray-50 text-gray-950 relative pt-28 sm:pt-32 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
         <div
           className="bg-[#e2fbe4] absolute -z-10 top-[-6rem] right-[11rem] 

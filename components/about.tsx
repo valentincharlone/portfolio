@@ -2,11 +2,9 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
-import { useLanguage } from "@/context/language-context";
 
 export default function About() {
-  const { t } = useLanguage();
-  const { ref } = useSectionInView(t("nav.about"));
+  const { ref } = useSectionInView("nav.about");
 
   return (
     <motion.section
@@ -18,21 +16,23 @@ export default function About() {
       ref={ref}
     >
       <SectionHeading>About me</SectionHeading>
+
       <p className="mb-3">
-        I'm a <span className="font-medium">Frontend Engineer</span> passionate
-        about creating modern web applications with exceptional user
-        experiences. I recently worked at{" "}
-        <span className="font-medium">TUXDI</span> developing the Artic CMS
-        platform and building engaging interfaces with advanced animations.
+        I'm a <span className="font-medium">Frontend Engineer</span> who loves
+        building modern web applications with exceptional user experiences. I
+        specialize in creating responsive, performant interfaces that solve
+        real-world problems.
       </p>
 
       <p>
-        I specialize in{" "}
+        My core stack includes{" "}
         <span className="font-medium">React, Next.js, and TypeScript</span>, and
-        I'm currently expanding my skills with{" "}
-        <span className="font-medium">React Native and Express.js</span>. I love
-        solving complex problems and bringing creative ideas to life through
-        code.
+        I'm currently expanding into{" "}
+        <span className="font-medium">
+          React Native and full-stack development like Express.js
+        </span>
+        . I'm passionate about clean code, modern development practices, and
+        staying at the forefront of web technology.
       </p>
     </motion.section>
   );

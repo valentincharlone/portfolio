@@ -5,7 +5,6 @@ import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useLanguage } from "@/context/language-context";
-import { TranslationKey } from "@/translations";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -21,7 +20,7 @@ export default function Header() {
           "backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:rounded-full ",
           "dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75",
           {
-            "sm:w-[41rem]": language === "es",
+            "sm:w-[42rem]": language === "es",
             "sm:w-[36rem]": language === "en",
           }
         )}
@@ -39,6 +38,8 @@ export default function Header() {
         >
           {links.map((link) => {
             const translatedName = t(link.name);
+            // Comparar con el key literal, no con la traducción
+            const isActive = activeSection === link.name;
 
             return (
               <motion.li
@@ -51,21 +52,19 @@ export default function Header() {
                   className={clsx(
                     "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300 rounded-full",
                     {
-                      "text-gray-950 dark:text-gray-200":
-                        activeSection === translatedName,
+                      "text-gray-950 dark:text-gray-200": isActive,
                     }
                   )}
                   href={link.hash}
                   onClick={() => {
-                    setActiveSection(translatedName as TranslationKey);
+                    // Guardar el key literal, no la traducción
+                    setActiveSection(link.name);
                     setTimeOfLastClick(Date.now());
                   }}
-                  aria-current={
-                    activeSection === translatedName ? "page" : undefined
-                  }
+                  aria-current={isActive ? "page" : undefined}
                 >
                   {translatedName}
-                  {activeSection === translatedName && (
+                  {isActive && (
                     <motion.span
                       className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
                       layoutId="activeSection"

@@ -9,7 +9,7 @@ import ContactLinks from "./contact-links";
 
 export default function Hero() {
   const { t } = useLanguage();
-  const { ref } = useSectionInView(t("nav.home"), 0.5);
+  const { ref } = useSectionInView("nav.home", 0.5);
 
   return (
     <section

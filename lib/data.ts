@@ -1,34 +1,33 @@
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
-import { TranslationKey } from "@/translations";
 
 export const links = [
   {
-    name: "nav.home" as TranslationKey,
+    name: "nav.home",
     hash: "#home",
   },
   {
-    name: "nav.about" as TranslationKey,
+    name: "nav.about",
     hash: "#about",
   },
   {
-    name: "nav.projects" as TranslationKey,
-    hash: "#projects",
-  },
-  {
-    name: "nav.skills" as TranslationKey,
-    hash: "#skills",
-  },
-  {
-    name: "nav.experience" as TranslationKey,
+    name: "nav.experience",
     hash: "#experience",
   },
   {
-    name: "nav.contact" as TranslationKey,
+    name: "nav.projects",
+    hash: "#projects",
+  },
+  {
+    name: "nav.skills",
+    hash: "#skills",
+  },
+  {
+    name: "nav.contact",
     hash: "#contact",
   },
-] as const
+] as const;
 
 export const experiencesData = [
   {

@@ -13,4 +13,6 @@ export const es = {
   "hero.cta": "Contactame",
   "hero.cv": "Descargar CV",
   "hero.available": "Disponible para proyectos",
+
+  // About
 };

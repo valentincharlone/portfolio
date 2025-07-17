@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
@@ -50,14 +51,13 @@ export default function Header() {
               >
                 <Link
                   className={clsx(
-                    "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300 rounded-full",
+                    "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition  dark:hover:text-gray-300 rounded-full",
                     {
                       "text-gray-950 dark:text-gray-200": isActive,
                     }
                   )}
                   href={link.hash}
                   onClick={() => {
-                    // Guardar el key literal, no la traducción
                     setActiveSection(link.name);
                     setTimeOfLastClick(Date.now());
                   }}

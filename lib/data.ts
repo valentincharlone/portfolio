@@ -1,6 +1,24 @@
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import {
+  SiHtml5,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiRedux,
+  SiPrisma,
+  SiStrapi,
+  SiCss3,
+  SiSass,
+  SiTailwindcss,
+  SiFramer,
+  SiGreensock,
+  SiGit,
+} from "react-icons/si";
+import type { IconType } from "react-icons";
+import { ZustandIcon } from "@/icons/zustand-icon";
 
 export const links = [
   {
@@ -12,16 +30,16 @@ export const links = [
     hash: "#about",
   },
   {
+    name: "nav.skills",
+    hash: "#skills",
+  },
+  {
     name: "nav.experience",
     hash: "#experience",
   },
   {
     name: "nav.projects",
     hash: "#projects",
-  },
-  {
-    name: "nav.skills",
-    hash: "#skills",
   },
   {
     name: "nav.contact",
@@ -83,19 +101,21 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
-  "HTML",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "React Native",
-  "Redux",
-  "Prisma",
-  "CSS",
-  "Sass",
-  "Tailwind",
-  "Framer Motion",
-  "GSAP",
-  "Git",
+export const skillsData: { name: string; icon: IconType | null }[] = [
+  { name: "HTML", icon: SiHtml5 },
+  { name: "TypeScript", icon: SiTypescript },
+  { name: "JavaScript", icon: SiJavascript },
+  { name: "React", icon: SiReact },
+  { name: "Next.js", icon: SiNextdotjs },
+  { name: "React Native", icon: SiReact },
+  { name: "Tailwind", icon: SiTailwindcss },
+  { name: "Sass", icon: SiSass },
+  { name: "CSS", icon: SiCss3 },
+  { name: "Strapi", icon: SiStrapi },
+  { name: "Prisma", icon: SiPrisma },
+  { name: "Zustand", icon: ZustandIcon },
+  { name: "Redux", icon: SiRedux },
+  { name: "Framer Motion", icon: SiFramer },
+  { name: "GSAP", icon: SiGreensock },
+  { name: "Git", icon: SiGit },
 ] as const;

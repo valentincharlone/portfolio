@@ -18,7 +18,7 @@ export default function Hero() {
       className="mb-28 max-w-[55rem] text-center sm:mb-5 scroll-mt-[100rem]"
     >
       <div className="mb-6">
-        <AvailabilityBadge />
+        <AvailabilityBadge label={t("hero.available")}/>
       </div>
       <ImageProfile />
       <motion.h1

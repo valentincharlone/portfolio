@@ -39,7 +39,6 @@ export default function Experience() {
             title={item.title}
             company={item.company}
             description={item.description}
-            icon={item.icon}
             date={item.date}
             technologies={[...item.technologies]}
             index={index}
@@ -54,14 +53,12 @@ function ExperienceItem({
   title,
   company,
   description,
-  icon,
   date,
   technologies,
 }: {
   title: string;
   company: string;
   description: string;
-  icon: string;
   date: string;
   technologies: string[];
   index: number;
@@ -87,7 +84,6 @@ function ExperienceItem({
         {/* Header */}
         <div className="flex items-start justify-between mb-4">
           <div className="flex items-center gap-4">
-            <div className="text-2xl">{icon}</div>
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{title}</h3>
               <p className="text-gray-700 font-medium dark:text-white/80">{company}</p>
@@ -99,7 +95,7 @@ function ExperienceItem({
         </div>
 
         {/* Description */}
-        <p className="text-gray-700 leading-relaxed mb-4 dark:text-white">{description}</p>
+        <p className="text-gray-700 font-light leading-relaxed mb-4 dark:text-white">{description}</p>
 
         {/* Technologies */}
         <ul className="flex flex-wrap gap-2">

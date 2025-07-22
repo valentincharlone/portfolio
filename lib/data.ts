@@ -84,6 +84,8 @@ export const projectsData = [
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "TypeScript", "Zustand", "CSS", "Vite", "Vercel"],
     imageUrl: corpcommentImg,
+    githubUrl: "https://github.com/valentincharlone/corp-comment",
+    liveUrl: "https://corp-comment-cyan.vercel.app/",
   },
   {
     title: "rmtDev",
@@ -91,23 +93,19 @@ export const projectsData = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "React-Query", "CSS", "Vite", "Vercel"],
     imageUrl: rmtdevImg,
+    githubUrl: "#", // Reemplaza con tu enlace de GitHub
+    liveUrl: "#", // Reemplaza con tu enlace en vivo
   },
   {
     title: "Pet Soft",
     description:
-      "Software de gestión integral para guarderías caninas. PetSoft simplifica la administración del negocio, permitiendo a los dueños registrar mascotas, gestionar reservas, procesar pagos de forma segura con Stripe y mantener un control total sobre los animales a su cuidado.",
-    tags: [
-      "React",
-      "Next.js",
-      "Tailwind",
-      "Shadcn",
-      "Prisma",
-      "Stripe",
-      "Vercel",
-    ],
+      "Software de gestión para guarderías caninas que permite registrar mascotas, gestionar reservas y procesar pagos seguros con Stripe.",
+    tags: ["React", "Next.js", "Tailwind", "Shadcn", "Prisma", "Stripe", "Vercel"],
     imageUrl: wordanalyticsImg,
+    githubUrl: "#", // Reemplaza con tu enlace de GitHub
+    liveUrl: "#", // Reemplaza con tu enlace en vivo
   },
-] as const;
+] as const
 
 export const skillsData: { name: string; icon: IconType | null }[] = [
   { name: "HTML", icon: SiHtml5 },

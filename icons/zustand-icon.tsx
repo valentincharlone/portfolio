@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ZustandSvg from "./zustand-icon.svg";
-import { useTheme } from "@/context/theme-context";
+import { useTheme } from "next-themes";
 
 export function ZustandIcon() {
   const { theme } = useTheme();

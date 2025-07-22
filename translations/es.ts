@@ -27,4 +27,9 @@ export const es = {
     "React Native y desarrollo full-stack como Express.js",
   "about.skills.part3":
     ". Valoro el código limpio, las prácticas de desarrollo modernas y mantenerme a la vanguardia de la tecnología web.",
+
+  // Skills
+  "skills.title": "Mis Habilidades",
+
+  // Projects
 };

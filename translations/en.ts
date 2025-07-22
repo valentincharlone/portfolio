@@ -27,4 +27,9 @@ export const en = {
     "React Native and full-stack development like Express.js",
   "about.skills.part3":
     ". I'm passionate about clean code, modern development practices, and staying at the forefront of web technology.",
+
+  // Skills
+  "skills.title": "My Skills",
+
+  // Projects
 };

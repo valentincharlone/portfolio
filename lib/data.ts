@@ -1,6 +1,7 @@
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import petSoft from "@/public/pet-soft.png";
+import todoApp from "@/public/todo-app.png";
 import {
   SiHtml5,
   SiJavascript,
@@ -93,19 +94,36 @@ export const projectsData = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "React-Query", "CSS", "Vite", "Vercel"],
     imageUrl: rmtdevImg,
-    githubUrl: "#", // Reemplaza con tu enlace de GitHub
-    liveUrl: "#", // Reemplaza con tu enlace en vivo
+    githubUrl: "https://github.com/valentincharlone/remote-dev",
+    liveUrl: "https://remote-dev-self.vercel.app/",
   },
   {
     title: "Pet Soft",
     description:
       "Software de gestión para guarderías caninas que permite registrar mascotas, gestionar reservas y procesar pagos seguros con Stripe.",
-    tags: ["React", "Next.js", "Tailwind", "Shadcn", "Prisma", "Stripe", "Vercel"],
-    imageUrl: wordanalyticsImg,
-    githubUrl: "#", // Reemplaza con tu enlace de GitHub
-    liveUrl: "#", // Reemplaza con tu enlace en vivo
+    tags: [
+      "React",
+      "Next.js",
+      "Tailwind",
+      "Shadcn",
+      "Prisma",
+      "Stripe",
+      "Vercel",
+    ],
+    imageUrl: petSoft,
+    githubUrl: "https://github.com/valentincharlone/petsoft",
+    liveUrl: "https://petsoft-blue.vercel.app/",
   },
-] as const
+  {
+    title: "TODO App",
+    description:
+      "Una aplicación web intuitiva para la gestión de tareas (CRUD) que permite organizar actividades diarias. Incluye autenticación segura y un diseño responsivo.",
+    tags: ["React", "TypeScript", "Vite", "Tailwind", "Kinde Auth", "Vercel"],
+    imageUrl: todoApp,
+    githubUrl: "https://github.com/valentincharlone/soft-todo",
+    liveUrl: "https://soft-todo.vercel.app/",
+  },
+] as const;
 
 export const skillsData: { name: string; icon: IconType | null }[] = [
   { name: "HTML", icon: SiHtml5 },

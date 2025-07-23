@@ -1,23 +1,36 @@
-"use client"
+"use client";
 
-import type { projectsData } from "@/lib/data"
-import { useScroll, useTransform } from "framer-motion"
-import Image from "next/image"
-import { useRef } from "react"
-import { motion } from "framer-motion"
-import { FaGithub } from "react-icons/fa"
-import { FiLink } from "react-icons/fi"
+import { useScroll, useTransform } from "framer-motion";
+import Image, { StaticImageData } from "next/image";
+import { useRef } from "react";
+import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
+import { FiLink } from "react-icons/fi";
 
-type ProjectProps = (typeof projectsData)[number]
+type ProjectProps = {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: StaticImageData;
+  githubUrl: string;
+  liveUrl: string;
+};
 
-export default function Project({ title, description, tags, imageUrl, githubUrl, liveUrl }: ProjectProps) {
-  const ref = useRef<HTMLDivElement>(null)
+export default function Project({
+  title,
+  description,
+  tags,
+  imageUrl,
+  githubUrl,
+  liveUrl,
+}: ProjectProps) {
+  const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1.5 1"],
-  })
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.7, 1])
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1])
+  });
+  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
+  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
     <motion.div
@@ -28,7 +41,7 @@ export default function Project({ title, description, tags, imageUrl, githubUrl,
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 sm:group-even:pr-4 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-6 sm:pr-2 sm:pt-10 sm:max-w-[55%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <div className="flex justify-between items-center gap-4">
             <h3 className="text-2xl font-semibold">{title}</h3>
@@ -58,7 +71,9 @@ export default function Project({ title, description, tags, imageUrl, githubUrl,
             </div>
           </div>
 
-          <p className="mt-2 leading-relaxed font-light text-gray-700 dark:text-white/80">{description}</p>
+          <p className="mt-2 leading-relaxed font-light text-gray-700 dark:text-white/80">
+            {description}
+          </p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
@@ -90,5 +105,5 @@ export default function Project({ title, description, tags, imageUrl, githubUrl,
         />
       </section>
     </motion.div>
-  )
+  );
 }

@@ -42,7 +42,7 @@ export const es = {
   // Projects
   "projects.title": "Mis Proyectos",
   "projects.description.corpcomment":
-    "Trabajé como desarrollador full-stack en este proyecto de startup durante 2 años. Los usuarios pueden dar feedback público a las empresas.",
+    "Plataforma interactiva para feedback público. Envía tus comentarios sobre empresas, vota por los más útiles y descubre la opinión de la comunidad.",
   "projects.description.rmtdev":
     "Bolsa de trabajo para empleos de desarrollador remoto. Fui el desarrollador front-end. Tiene características como filtrado, ordenación y paginación.",
   "projects.description.petsoft":

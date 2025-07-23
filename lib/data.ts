@@ -82,17 +82,23 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+    description: "projects.description.corpcomment",
     tags: ["React", "TypeScript", "Zustand", "CSS", "Vite", "Vercel"],
     imageUrl: corpcommentImg,
     githubUrl: "https://github.com/valentincharlone/corp-comment",
     liveUrl: "https://corp-comment-cyan.vercel.app/",
   },
   {
+    title: "TODO App",
+    description: "projects.description.todoapp",
+    tags: ["React", "TypeScript", "Vite", "Tailwind", "Kinde Auth", "Vercel"],
+    imageUrl: todoApp,
+    githubUrl: "https://github.com/valentincharlone/soft-todo",
+    liveUrl: "https://soft-todo.vercel.app/",
+  },
+  {
     title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+    description: "projects.description.rmtdev",
     tags: ["React", "TypeScript", "React-Query", "CSS", "Vite", "Vercel"],
     imageUrl: rmtdevImg,
     githubUrl: "https://github.com/valentincharlone/remote-dev",
@@ -100,8 +106,7 @@ export const projectsData = [
   },
   {
     title: "Pet Soft",
-    description:
-      "Software de gestión para guarderías caninas que permite registrar mascotas, gestionar reservas y procesar pagos seguros con Stripe.",
+    description: "projects.description.petsoft",
     tags: [
       "React",
       "Next.js",
@@ -115,16 +120,7 @@ export const projectsData = [
     githubUrl: "https://github.com/valentincharlone/petsoft",
     liveUrl: "https://petsoft-blue.vercel.app/",
   },
-  {
-    title: "TODO App",
-    description:
-      "Una aplicación web intuitiva para la gestión de tareas (CRUD) que permite organizar actividades diarias. Incluye autenticación segura y un diseño responsivo.",
-    tags: ["React", "TypeScript", "Vite", "Tailwind", "Kinde Auth", "Vercel"],
-    imageUrl: todoApp,
-    githubUrl: "https://github.com/valentincharlone/soft-todo",
-    liveUrl: "https://soft-todo.vercel.app/",
-  },
-] as const;
+];
 
 export const skillsData: { name: string; icon: IconType | null }[] = [
   { name: "HTML", icon: SiHtml5 },

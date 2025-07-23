@@ -9,7 +9,7 @@ const staggeredContainerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2, // Tiempo de espera entre cada elemento hijo
+      staggerChildren: 0.2,
     },
   },
 };
@@ -38,7 +38,6 @@ export default function About() {
       variants={staggeredContainerVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
     >
       <motion.div variants={staggeredItemVariants}>
         <SectionHeading>{t("about.title")}</SectionHeading>

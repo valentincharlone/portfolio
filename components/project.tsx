@@ -54,7 +54,7 @@ export default function Project({
                   className="text-gray-700 hover:text-gray-950 dark:text-white/70 dark:hover:text-white transition"
                   aria-label={`GitHub repository for ${title}`}
                 >
-                  <FaGithub size={20} />
+                  <FaGithub className="h-5 w-5" />
                 </a>
               )}
               {liveUrl && (
@@ -65,7 +65,7 @@ export default function Project({
                   className="text-gray-700 hover:text-gray-950 dark:text-white/70 dark:hover:text-white transition"
                   aria-label={`Live demo for ${title}`}
                 >
-                  <FiLink size={20} />
+                  <FiLink className="h-5 w-5"/>
                 </a>
               )}
             </div>

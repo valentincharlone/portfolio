@@ -9,6 +9,7 @@ export default function LanguageSwitch() {
     <div className="flex items-center bg-white bg-opacity-80 backdrop-blur-[0.5rem] border border-gray-400 border-opacity-40 shadow-2xl rounded-full p-[5px] dark:bg-gray-950 dark:bg-opacity-80 ">
       <button
         onClick={() => setLanguage("es")}
+        aria-label="Switch language"
         className={`px-3 py-2 text-sm font-medium rounded-full transition-all relative ${
           language === "es"
             ? "text-gray-900 dark:text-gray-100"

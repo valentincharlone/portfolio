@@ -16,7 +16,7 @@ export const en = {
 
   // About
   "about.title": "About Me",
-  "about.intro.part1": "As a ", 
+  "about.intro.part1": "As a ",
   "about.intro.role": "Frontend Engineer",
   "about.intro.part2":
     ", my passion is building modern web applications with exceptional user experiences. I specialize in creating responsive, high-performance interfaces that solve real-world problems.",
@@ -48,4 +48,18 @@ export const en = {
     "Management software for dog daycare centers that allows registering pets, managing reservations, and processing secure payments with Stripe.",
   "projects.description.todoapp":
     "An intuitive web application for task management (CRUD) that allows organizing daily activities. It includes secure authentication and a responsive design.",
+
+  // Contact
+  "contact.title": "Contact Me",
+  "contact.part1": "Please contact me directly at ",
+  "contact.part2": " or through this form.",
+  "contact.toast.success": "Email sent successfully!",
+  "contact.toast.error": "Error sending email. Please try again.",
+  "contact.input": "Your email",
+  "contact.textarea": "Your message",
+  "contact.btn": "Submit",
+
+  // Footer
+  "footer.copyright": "All rights reserved.",
+  "footer.builtWith": "Built with",
 };

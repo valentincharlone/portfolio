@@ -49,4 +49,19 @@ export const es = {
     "Software de gestión para guarderías caninas que permite registrar mascotas, gestionar reservas y procesar pagos seguros con Stripe.",
   "projects.description.todoapp":
     "Una aplicación web intuitiva para la gestión de tareas (CRUD) que permite organizar actividades diarias. Incluye autenticación segura y un diseño responsivo.",
+
+  // Contact
+  "contact.title": "Contactame",
+  "contact.part1": "Por favor, contáctame directamente a ",
+  "contact.part2": " o a través de este formulario.",
+  "contact.toast.success": "Email enviado exitosamente!",
+  "contact.toast.error":
+    "Error al enviar el email. Por favor, intenta de nuevo.",
+  "contact.input": "Tu email",
+  "contact.textarea": "Tu mensaje",
+  "contact.btn": "Enviar",
+
+  // Footer
+  "footer.copyright": "Todos los derechos reservados.",
+  "footer.builtWith": "Desarrollado con",
 };

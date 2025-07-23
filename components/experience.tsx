@@ -1,4 +1,5 @@
 "use client";
+import { useLanguage } from "@/context/language-context";
 import SectionHeading from "./section-heading";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
@@ -22,6 +23,7 @@ const fadeInAnimationVariants = {
 };
 
 export default function Experience() {
+  const { t } = useLanguage();
   const { ref } = useSectionInView("nav.experience");
 
   return (
@@ -30,7 +32,7 @@ export default function Experience() {
       ref={ref}
       className="scroll-mt-28 mb-28 sm:mb-40 max-w-[53rem] mx-auto"
     >
-      <SectionHeading>My Experience</SectionHeading>
+      <SectionHeading>{t("experience.title")}</SectionHeading>
 
       <div className="space-y-8">
         {experiencesData.map((item, index) => (
@@ -38,7 +40,7 @@ export default function Experience() {
             key={index}
             title={item.title}
             company={item.company}
-            description={item.description}
+            description={t(item.description)}
             date={item.date}
             technologies={[...item.technologies]}
             index={index}
@@ -80,13 +82,17 @@ function ExperienceItem({
       }}
       className="group"
     >
-      <section className="bg-gray-100 border border-black/5 rounded-lg p-6 hover:bg-gray-200 transition-colors dark:bg-white/10 dark:hover:bg-white/20">
+      <section className="bg-gray-100 border border-black/5 rounded-lg p-6 hover:bg-gray-200 transition-colors dark:bg-white/10 dark:hover:bg-white/20 select-none">
         {/* Header */}
         <div className="flex items-start justify-between mb-4">
           <div className="flex items-center gap-4">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{title}</h3>
-              <p className="text-gray-700 font-medium dark:text-white/80">{company}</p>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                {title}
+              </h3>
+              <p className="text-gray-700 font-medium dark:text-white/80">
+                {company}
+              </p>
             </div>
           </div>
           <span className="text-sm text-gray-600 bg-white px-3 py-1 rounded-full border border-black/[0.1] dark:bg-black/[0.1] dark:text-white/80">
@@ -95,7 +101,9 @@ function ExperienceItem({
         </div>
 
         {/* Description */}
-        <p className="text-gray-700 font-light leading-relaxed mb-4 dark:text-white">{description}</p>
+        <p className="text-gray-700 font-light leading-relaxed mb-4 dark:text-white/90">
+          {description}
+        </p>
 
         {/* Technologies */}
         <ul className="flex flex-wrap gap-2">

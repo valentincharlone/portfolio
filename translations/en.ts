@@ -9,27 +9,43 @@ export const en = {
 
   // Hero
   "hero.title":
-    "Hello, I'm Valentín. I'm a Frontend Engineer with 2+ years of experience building modern web applications. I specialize in ",
-  "hero.cta": "Contact me here",
+    "Hello, I'm Vachi. Frontend Engineer with over 2 years of experience dedicated to building modern web applications. I specialize in ",
+  "hero.cta": "Contact me",
   "hero.cv": "Download CV",
   "hero.available": "Available for projects",
 
   // About
-  "about.title": "About me",
-  "about.intro.part1": "I'm a",
+  "about.title": "About Me",
+  "about.intro.part1": "As a ", 
   "about.intro.role": "Frontend Engineer",
   "about.intro.part2":
-    "who loves building modern web applications with exceptional user experiences. I specialize in creating responsive, performant interfaces that solve real-world problems.",
-  "about.skills.part1": "My core stack includes",
+    ", my passion is building modern web applications with exceptional user experiences. I specialize in creating responsive, high-performance interfaces that solve real-world problems.",
+  "about.skills.part1": "My main stack includes",
   "about.skills.technologies": "React, Next.js, and TypeScript",
-  "about.skills.part2": ", and I'm currently expanding into",
+  "about.skills.part2": ", and I am currently expanding my skills into ",
   "about.skills.expanding":
-    "React Native and full-stack development like Express.js",
+    "mobile app development with React Native and backend with Express.js",
   "about.skills.part3":
-    ". I'm passionate about clean code, modern development practices, and staying at the forefront of web technology.",
+    ". I value clean code, best practices, and always staying at the forefront of web technology.", // Minor tweak
 
   // Skills
   "skills.title": "My Skills",
 
+  // Experience
+  "experience.title": "My Experience",
+  "experience.description.tuxdi":
+    "Successfully implemented key features such as 'Entities' and 'Benefits' in the Artic CMS product. For the latter, I also performed the full migration from Next.js 12 to Next.js 14. Developed the new corporate landing page featuring a disruptive design, advanced animations, and 3D objects using Next.js 14 and TypeScript. Led onboarding processes and migrations for new media outlets.",
+  "experience.description.freelance":
+    "Developed responsive websites for clients such as Electromédica de las Sierras and Alonso Ganados. Handled requirement gathering, designed custom technical solutions, and managed end-to-end hosting. Coordinated with clients through iterative demos.",
+
   // Projects
+  "projects.title": "My Projects",
+  "projects.description.corpcomment":
+    "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+  "projects.description.rmtdev":
+    "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+  "projects.description.petsoft":
+    "Management software for dog daycare centers that allows registering pets, managing reservations, and processing secure payments with Stripe.",
+  "projects.description.todoapp":
+    "An intuitive web application for task management (CRUD) that allows organizing daily activities. It includes secure authentication and a responsive design.",
 };

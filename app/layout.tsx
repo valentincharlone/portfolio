@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Valentin Charlone",
     default: "Valentin Charlone | Portfolio",
   },
+  manifest: "/site.webmanifest",
   description:
     "Desarrollador Frontend especializado en React, Next.js y TypeScript. Explora mis proyectos, habilidades y experiencia profesional.",
 
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
 
   keywords: [
     "Frontend Developer",
+    "Frontend Engineer",
     "Desarrollador Frontend",
     "React",
     "Next.js",
@@ -46,19 +48,11 @@ export const metadata: Metadata = {
   creator: "Valentin Charlone",
 
   openGraph: {
-    title: "Valentin Charlone | Portafolio de Desarrollador Frontend",
+    title: "Valentin Charlone | Portfolio",
     description:
       "Especializado en React, Next.js y TypeScript. Explora mis proyectos y experiencia.",
     url: "https://valentin-charlone.vercel.app/",
-    siteName: "Portafolio de Valentin Charlone",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Vista previa del portafolio de Valentin Charlone",
-      },
-    ],
+    siteName: "Portfolio of Valentin Charlone",
     locale: "es_ES",
     type: "website",
   },

@@ -16,8 +16,53 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Valentin Charlone | Portfolio",
-  description: "Frontend developer",
+  title: {
+    template: "%s | Valentin Charlone",
+    default: "Valentin Charlone | Portfolio",
+  },
+  description:
+    "Desarrollador Frontend especializado en React, Next.js y TypeScript. Explora mis proyectos, habilidades y experiencia profesional.",
+
+  // --- URL BASE (USA TU URL DE VERCEL POR AHORA) ---
+  // metadataBase: new URL("https://portfolio-seven-hazel-21.vercel.app"),
+
+  keywords: [
+    "Frontend Developer",
+    "Desarrollador Frontend",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Portafolio",
+    "Web Developer",
+    "Valentin Charlone",
+  ],
+
+  authors: [
+    {
+      name: "Valentin Charlone",
+      // url: "https://portfolio-seven-hazel-21.vercel.app",
+    },
+  ],
+  creator: "Valentin Charlone",
+
+  openGraph: {
+    title: "Valentin Charlone | Portafolio de Desarrollador Frontend",
+    description:
+      "Especializado en React, Next.js y TypeScript. Explora mis proyectos y experiencia.",
+    // url: "https://portfolio-seven-hazel-21.vercel.app",
+    siteName: "Portafolio de Valentin Charlone",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Vista previa del portafolio de Valentin Charlone",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

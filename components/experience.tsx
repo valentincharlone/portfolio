@@ -68,7 +68,7 @@ function ExperienceItem({
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.5 1"],
+    offset: ["0 1", "1.2 1"],
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
@@ -84,7 +84,7 @@ function ExperienceItem({
     >
       <section className="bg-gray-100 border border-black/5 rounded-lg p-6 hover:bg-gray-200 transition-colors dark:bg-white/10 dark:hover:bg-white/20 select-none">
         {/* Header */}
-        <div className="flex items-start justify-between mb-4">
+        <div className="flex items-start flex-col sm:flex-row justify-between mb-4">
           <div className="flex items-center gap-4">
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -95,7 +95,7 @@ function ExperienceItem({
               </p>
             </div>
           </div>
-          <span className="text-sm text-gray-600 bg-white px-3 py-1 rounded-full border border-black/[0.1] dark:bg-black/[0.1] dark:text-white/80">
+          <span className="text-sm underline underline-offset-1  text-gray-600   dark:text-white/80">
             {date}
           </span>
         </div>

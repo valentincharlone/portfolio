@@ -19,7 +19,7 @@ export const en = {
   "about.intro.part1": "As a ",
   "about.intro.role": "Frontend Engineer",
   "about.intro.part2":
-    ", my passion is building modern web applications with exceptional user experiences. I specialize in creating responsive, high-performance interfaces that solve real-world problems.",
+    ", enjoy building modern web applications with exceptional user experiences. I focus in creating responsive, high-performance interfaces that solve real-world problems.",
   "about.skills.part1": "My main stack includes",
   "about.skills.technologies": "React, Next.js, and TypeScript",
   "about.skills.part2": ", and I am currently expanding my skills into ",

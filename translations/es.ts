@@ -19,7 +19,7 @@ export const es = {
   "about.intro.part1": "Como ",
   "about.intro.role": "Frontend Engineer",
   "about.intro.part2":
-    ", mi pasión es la construcción de aplicaciones web modernas con experiencias de usuario excepcionales. Me especializo en crear interfaces responsivas y de alto rendimiento que resuelven problemas del mundo real.",
+    ", disfruto en la construcción de aplicaciones web modernas con experiencias de usuario excepcionales. Me enfoco en crear interfaces responsivas y de alto rendimiento que resuelven problemas del mundo real.",
   "about.skills.part1": "Mi stack principal incluye",
   "about.skills.technologies": "React, Next.js y TypeScript",
   "about.skills.part2":

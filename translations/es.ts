@@ -9,7 +9,7 @@ export const es = {
 
   // Hero
   "hero.title":
-    "Hola, soy Vachi. Frontend Engineer con más de 2 años de experiencia dedicado a construir aplicaciones web modernas. Me especializo en ",
+    "Hola, soy Vachi. Frontend Engineer con más de 3 años de experiencia dedicado a construir aplicaciones web modernas. Me especializo en ",
   "hero.cta": "Contáctame",
   "hero.cv": "Descargar CV",
   "hero.available": "Disponible para proyectos",

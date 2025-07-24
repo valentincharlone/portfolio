@@ -28,12 +28,12 @@ const staggeredItemVariants = {
 
 export default function About() {
   const { t } = useLanguage();
-  const { ref } = useSectionInView("nav.about");
+  const { ref } = useSectionInView("nav.about", 0.5);
 
   return (
     <motion.section
       ref={ref}
-      id="about-staggered"
+      id="about"
       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       variants={staggeredContainerVariants}
       initial="hidden"

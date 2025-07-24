@@ -23,8 +23,7 @@ export const metadata: Metadata = {
   description:
     "Desarrollador Frontend especializado en React, Next.js y TypeScript. Explora mis proyectos, habilidades y experiencia profesional.",
 
-  // --- URL BASE (USA TU URL DE VERCEL POR AHORA) ---
-  // metadataBase: new URL("https://portfolio-seven-hazel-21.vercel.app"),
+  metadataBase: new URL("https://valentin-charlone.vercel.app/"),
 
   keywords: [
     "Frontend Developer",
@@ -41,7 +40,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Valentin Charlone",
-      // url: "https://portfolio-seven-hazel-21.vercel.app",
+      url: "https://valentin-charlone.vercel.app/",
     },
   ],
   creator: "Valentin Charlone",
@@ -50,7 +49,7 @@ export const metadata: Metadata = {
     title: "Valentin Charlone | Portafolio de Desarrollador Frontend",
     description:
       "Especializado en React, Next.js y TypeScript. Explora mis proyectos y experiencia.",
-    // url: "https://portfolio-seven-hazel-21.vercel.app",
+    url: "https://valentin-charlone.vercel.app/",
     siteName: "Portafolio de Valentin Charlone",
     images: [
       {

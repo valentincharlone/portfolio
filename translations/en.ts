@@ -9,7 +9,7 @@ export const en = {
 
   // Hero
   "hero.title":
-    "Hello, I'm Vachi. Frontend Engineer with over 2 years of experience dedicated to building modern web applications. I specialize in ",
+    "Hello, I'm Vachi. Frontend Engineer with over 3 years of experience dedicated to building modern web applications. I specialize in ",
   "hero.cta": "Contact me",
   "hero.cv": "Download CV",
   "hero.available": "Available for projects",

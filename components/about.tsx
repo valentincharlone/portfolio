@@ -43,9 +43,9 @@ export default function About() {
         <SectionHeading>{t("about.title")}</SectionHeading>
       </motion.div>
       <motion.p className="mb-3" variants={staggeredItemVariants}>
-        {t("about.intro.part1")}{" "}
+        
         <span className="font-medium">{t("about.intro.role")}</span>{" "}
-        {t("about.intro.part2")}
+        {t("about.intro")}
       </motion.p>
       <motion.p variants={staggeredItemVariants}>
         {t("about.skills.part1")}{" "}

@@ -16,17 +16,15 @@ export const en = {
 
   // About
   "about.title": "About Me",
-  "about.intro.part1": "As a ",
   "about.intro.role": "Frontend Engineer",
-  "about.intro.part2":
-    ", enjoy building modern web applications with exceptional user experiences. I focus in creating responsive, high-performance interfaces that solve real-world problems.",
-  "about.skills.part1": "My main stack includes",
+  "about.intro":
+    " with a passion for crafting modern, intuitive, and user-centered digital experiences. I enjoy turning ideas into visually appealing interfaces that run smoothly across all devices.",
+  "about.skills.part1": "My main stack includes ",
   "about.skills.technologies": "React, Next.js, and TypeScript",
-  "about.skills.part2": ", and I am currently expanding my skills into ",
-  "about.skills.expanding":
-    "mobile app development with React Native and backend with Express.js",
+  "about.skills.part2": ", and I'm also expanding my knowledge into ",
+  "about.skills.expanding": "backend development with Express.js",
   "about.skills.part3":
-    ". I value clean code, best practices, and always staying at the forefront of web technology.", // Minor tweak
+    ". I value writing clean code, following best practices, and constantly evolving within the web ecosystem.",
 
   // Skills
   "skills.title": "My Skills",

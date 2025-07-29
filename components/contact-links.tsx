@@ -26,8 +26,8 @@ export default function ContactLinks() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV-Valentin-Charlone.pdf"
-          download="CV-Valentin-Charlone.pdf"
+          href="/Valentin-Charlone-CV.pdf"
+          download="Valentin-Charlone-CV.pdf"
         >
           {t("hero.cv")}{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
